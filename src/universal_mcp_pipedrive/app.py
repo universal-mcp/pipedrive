@@ -4,7 +4,7 @@ from universal_mcp.integrations import Integration
 
 class PipedriveApp(APIApplication):
     def __init__(self, integration: Integration = None, **kwargs) -> None:
-        super().__init__(name='pipedriveapp', integration=integration, **kwargs)
+        super().__init__(name='pipedrive', integration=integration, **kwargs)
         self.base_url = "https://api.pipedrive.com/v1"
 
     def oauth_request_authorization(self, client_id, redirect_uri, state=None) -> Any:
