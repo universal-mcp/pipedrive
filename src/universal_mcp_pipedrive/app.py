@@ -3940,7 +3940,7 @@ class PipedriveApp(APIApplication):
             JSONDecodeError: Raised if the response body cannot be parsed as JSON.
 
         Tags:
-            Notes
+            Notes, important
         """
         url = f"{self.base_url}/notes"
         query_params = {k: v for k, v in [('user_id', user_id), ('lead_id', lead_id), ('deal_id', deal_id), ('person_id', person_id), ('org_id', org_id), ('start', start), ('limit', limit), ('sort', sort), ('start_date', start_date), ('end_date', end_date), ('pinned_to_lead_flag', pinned_to_lead_flag), ('pinned_to_deal_flag', pinned_to_deal_flag), ('pinned_to_organization_flag', pinned_to_organization_flag), ('pinned_to_person_flag', pinned_to_person_flag)] if v is not None}
@@ -3978,7 +3978,7 @@ class PipedriveApp(APIApplication):
             JSONDecodeError: Raised if the response body cannot be parsed as JSON.
 
         Tags:
-            Notes
+            Notes, important
         """
         request_body_data = None
         request_body_data = {
@@ -8860,7 +8860,7 @@ class PipedriveApp(APIApplication):
             JSONDecodeError: Raised if the response body cannot be parsed as JSON.
 
         Tags:
-            Tasks
+            Tasks, important
         """
         request_body_data = None
         request_body_data = {
@@ -8899,7 +8899,7 @@ class PipedriveApp(APIApplication):
             JSONDecodeError: Raised if the response body cannot be parsed as JSON.
 
         Tags:
-            Tasks
+            Tasks, important
         """
         if id is None:
             raise ValueError("Missing required parameter 'id'.")
@@ -9124,7 +9124,7 @@ class PipedriveApp(APIApplication):
             JSONDecodeError: Raised if the response body cannot be parsed as JSON.
 
         Tags:
-            Users
+            Users, important
         """
         if id is None:
             raise ValueError("Missing required parameter 'id'.")
