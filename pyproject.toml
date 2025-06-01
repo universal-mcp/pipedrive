@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "universal-mcp-pipedrive"
-version = "0.1.3"
+version = "0.1.5"
 description = "A Universal MCP Application: universal_mcp_pipedrive"
 readme = "README.md"
 requires-python = ">=3.11"
